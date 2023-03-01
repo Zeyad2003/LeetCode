@@ -1,4 +1,4 @@
-# [912. Sort an Array<span style="color:#ffcf92; font-size: 20px"><div>Medium</div></span>](https://leetcode.com/problems/sort-an-array/) 
+# [912. Sort an Array](https://leetcode.com/problems/sort-an-array/) 
 ![fast.png](https://assets.leetcode.com/users/images/a6e72eb7-c8a6-4500-b561-81c830146cba_1677654687.5122967.png)
 
 ## Some Primary Questions

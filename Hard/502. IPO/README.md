@@ -1,4 +1,4 @@
-# [502. IPO<span style="color:#e91e63; font-size: 20px"><div>Hard</div></span>](https://leetcode.com/problems/ipo/)
+# [502. IPO](https://leetcode.com/problems/ipo/)
 
 ## Solution
 - You need to sort the projects with less capital first.
