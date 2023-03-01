@@ -1,4 +1,4 @@
-# [733. Flood Fill<span style="color:#55a347; font-size: 20px"><div>Easy</div></span>](https://leetcode.com/problems/ipo/)
+# [733. Flood Fill](https://leetcode.com/problems/ipo/)
 
 ## Solution
 Just use dfs to fill the image from the starting cell, then call the function recursively on the adjacent cells.
