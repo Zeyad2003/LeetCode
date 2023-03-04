@@ -5,7 +5,7 @@
 - if `low == high`, just check if `low` is odd 
 
 ## Complexity
-- Time complexity: `O(1n)` 
+- Time complexity: `O(1)` 
 
 - Space complexity: `O(1)`.
 
