@@ -62,6 +62,7 @@ public:
                     l = mid + 1;
             }
         }
+        return -1; // target not found
     }
 };
 ```
