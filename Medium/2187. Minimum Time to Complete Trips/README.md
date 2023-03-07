@@ -3,7 +3,7 @@
 ## Solution
 - Apply Binary Search to find the minimum time when all trips can be completed.
 ## Complexity
-- Time complexity: `O(log(n))`, Where `n` is the number of trips.
+- Time complexity: `O(nlog(n))`, Where `n` is the number of trips.
 - Space complexity: `O(1)`
 
 ## Code
