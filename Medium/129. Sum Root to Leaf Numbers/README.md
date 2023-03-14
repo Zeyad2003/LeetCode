@@ -1,4 +1,5 @@
 # [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+![fastSolution](https://assets.leetcode.com/users/images/c0bab198-c8d5-415f-971a-bc38b2f34c7b_1678775938.4139845.png)
 
 ## Solution
 - Use `DFS` Algorithm to traverse the tree and use `tmp` variable to store the path value, and when you are at the leaf node add the path value to the `sum` variable.
