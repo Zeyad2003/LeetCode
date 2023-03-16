@@ -1,17 +1,17 @@
 # [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
-# Solution
+## Solution
 - The last element in postorder traversal is the root of the tree.
 - Find the root in inorder traversal, then the left part is the left subtree, the right part is the right subtree.
 - Recursively build the left and right subtree.
 - Boundaries of the left and right subtree in inorder traversal can be found by the root index in inorder traversal.
 - Boundaries of the left and right subtree in postorder traversal can be found by the length of the left subtree.
 
-# Complexity
+## Complexity
 - Time Complexity: `O(n)`, where `n` is the number of nodes in the tree.
 - Space Complexity: `O(log(n))`, for the call stack max depth is `log(n)`.
 
-# Code
+## Code
 ```cpp
 class Solution {
 public:
