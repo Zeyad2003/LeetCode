@@ -2,7 +2,7 @@
 
 ## Solution
 - **Important Observation**: for every cell you have only 4 directions to go to, so we can see a shortest path problem to reach the target with minimum cost you can.
-- Use `BFS` Algorithm to find the shortest path with minimum cost you can.
+- Use `BFS` Algorithm to find the shortest path with minimum cost you can afford.
 - If you are going to follow the existing direction, you don't need to pay any cost.
 - If you are going to change the direction, you need to pay `1` cost.
 ## Complexity
