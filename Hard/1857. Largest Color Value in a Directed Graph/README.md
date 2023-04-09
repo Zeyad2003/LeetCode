@@ -1,5 +1,5 @@
 # [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)
-
+![Screenshot from 2023-04-09 17-36-13.png](https://assets.leetcode.com/users/images/b9ccae88-805d-44ce-830b-89c52a185bbb_1681054587.1328218.png)
 ## Solution
 - Use `DFS` to detect if there's a cycle in the graph
     - If there's a cycle return `-1`
