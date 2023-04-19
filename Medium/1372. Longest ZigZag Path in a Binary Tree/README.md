@@ -1,4 +1,5 @@
 # [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+![image](https://assets.leetcode.com/users/images/95e8eb11-89a5-4809-b9f4-8738ad7affc8_1681907979.890191.png)
 
 ## Solution
 - Use `DFS` to traverse the tree and keep track with the length you have and the direction you come from.
