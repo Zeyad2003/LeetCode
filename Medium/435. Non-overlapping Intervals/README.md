@@ -6,8 +6,8 @@
 - When you meet an interval that overlap with the max end time, remove it by increasing the ans variable.
 - Else, update the max end time to the current interval's end time.
 ## Complexity
-- Time Complexity:
-- Space Complexity:
+- Time Complexity: `O(nlogn)`, for sorting the intervals, and `n` is the number of intervals
+- Space Complexity: `O(1)`, no extra space is used
 ## Code
 ```cpp
 class Solution {
