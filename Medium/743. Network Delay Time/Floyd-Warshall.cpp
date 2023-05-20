@@ -1,34 +1,22 @@
 class Solution {
 public:
-    int n; // number of nodes
-    const int oo = 1e9; // infinity
-    vector<int> dist; // distance from source K
-    vector<vector<pair<int, int> > > adj; // our graph
-
-    void bellman(int src) { // apply bellman ford algorithm
-        for(int i = 1; i < n; i++) {
-            for(int srcNode = 1; srcNode <= n; srcNode++) {
-                for(auto [destNode, w] : adj[srcNode]) {
-                    dist[destNode] = min(dist[destNode], dist[srcNode] + w);
-                }
-            }
-        }
+    void floyd(vector<vector<int> > &adj, int n) {
+        for (int k = 0; k < n; k++)
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]); // Relaxation Step
     }
+    int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+        vector<vector<int> > adj(n + 1, vector<int> (n + 1, 1e9));
+        for(auto & i : times)
+            adj[i[0]][i[1]] = i[2];
 
-    int networkDelayTime(vector<vector<int>>& times, int N, int k) {
-        n = N;
-        adj = vector<vector<pair<int, int> > > (n + 1);
-        dist = vector<int> (n + 1, oo);
-        dist[k] = 0; // distance from source K to K is 0
+        for(int i = 1; i <= n; i++) adj[i][i] = 0; // Distance from a node to itself is 0
 
-        for(auto i : times) { // build our graph
-            auto [u, v, w] = tie(i[0], i[1], i[2]);
-            adj[u].emplace_back(v, w);
-        }
-
-        bellman(k); // apply bellman ford algorithm
-        int ans = dist[1]; // this variable will store the max distance from source K to any other node
-        for(int i = 1; i <= n; i++) ans = max(ans, dist[i]); // find the max distance
-        return (ans < oo) ? ans : -1; // if it's infinity -> no path so return -1 else return ans
+        floyd(adj, n + 1); // Get the shortest path from every node to every other node
+        int ans = 0;
+        for (int i = 1; i <= n; i++)
+            ans = max(ans, adj[k][i]); // Get the maximum time taken to reach any node from k
+        return ans == 1e9 ? -1 : ans;
     }
 };
