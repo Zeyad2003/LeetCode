@@ -1,5 +1,7 @@
 # [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/)
 
+![Fast-Solution](https://github.com/Zeyad2003/LeetCode/assets/87117386/12614cc5-98ce-407b-9534-e95d45158b6a)
+
 ## Solution:
 - On every index on string `s` You decide to skip it or try to take any word from all words in `dictionary` that can match any substring that starts with the current index.
 - I think it's obvious that we need `Dynamic Programming` here.
@@ -10,7 +12,7 @@
 ## Complexity
 - Time Complexity: `O(N * M * K)`, where `N` is the length of `s` and `M` is the length of `Dictionary` and `K` is the length of `dictionary[i]`.
 
-- Space Complexity: `O(1)` for the `dp` array and `O(n)` for the recursive calls.
+- Space Complexity: `O(N)` for the `dp` array and the recursive calls.
 
 ## Code
 ### C++
